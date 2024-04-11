@@ -1,0 +1,169 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(173, 202, 255);
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.form-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input,
+button {
+  height: 40px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px 8px;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  align-self: center;
+  background-color: #2890ff;
+  color: white;
+  border-color: #2890ff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #0070e8;
+  border-color: #0070e8;
+}
+
+/* Buttons Container */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.add-btn {
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .add-btn {
+    align-self: flex-end;
+  }
+}
+
+.action-btn {
+  grid-column: span 4;
+}
+
+@media (min-width: 560px) {
+  .action-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Interaction States */
+.input:hover,
+.input:focus {
+  border-color: #007bff;
+}
+
+/* List Styles */
+ul,
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 300px;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .form,
+  .pairs-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .form {
+    align-items: flex-end;
+  }
+
+  .form-input,
+  .list {
+    grid-column: span 3;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .list {
+    margin-bottom: 0;
+  }
+}
+
+/* Error and Hidden Styles */
+#errorElem {
+  color: red;
+}
+
+hidden {
+  visibility: hidden;
+}

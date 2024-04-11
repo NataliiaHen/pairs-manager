@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A web application for managing name=value pairs"
+    />
+    <title>Pairs Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1 class="visually-hidden">Pairs Manager</h1>
+      </header>
+
+      <section class="form-container">
+        <form class="form" id="form">
+          <div class="form-input">
+            <label for="input" class="label">Name=Value Pair</label>
+            <input
+              type="text"
+              id="input"
+              class="input"
+              aria-label="Name=Value Pair"
+              placeholder="Enter Name=Value pair"
+              required
+            />
+          </div>
+          <button
+            class="add-btn"
+            type="submit"
+            aria-label="Add Name=Value pair"
+          >
+            Add
+          </button>
+        </form>
+        <p id="errorElem" hidden>
+          Invalid value. Please type in "Name=Value" format.
+        </p>
+      </section>
+
+      <section class="pairs-container">
+        <ul class="list" id="list" aria-label="List of Name=Value pairs"></ul>
+        <div class="buttons">
+          <button
+            id="sort-by-name"
+            class="action-btn"
+            aria-label="Sort by Name"
+          >
+            Sort by Name
+          </button>
+          <button
+            id="sort-by-value"
+            class="action-btn"
+            aria-label="Sort by Value"
+          >
+            Sort by Value
+          </button>
+          <button
+            id="delete-pairs"
+            class="action-btn"
+            aria-label="Delete Selected Pairs"
+          >
+            Delete
+          </button>
+          <button id="show-as-xml" class="action-btn" aria-label="Show as XML">
+            Show as XML
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
