@@ -2,6 +2,8 @@
 
 The "Pairs Manager" is a web application designed for managing `name=value` pairs efficiently. Built with modern web technologies, this application offers a user-friendly interface to add, sort, and delete pairs, along with an option to view the pairs in XML format.
 
+You can visit website, just click the [PREVIEW LINK](https://nataliiahen.github.io/pairs-manager/)
+
 ## Features
 
 1. **Add Name=Value Pairs**: Users can add pairs using a simple text input. The application validates the input format to ensure data integrity.
@@ -11,7 +13,7 @@ The "Pairs Manager" is a web application designed for managing `name=value` pair
 
 This application is designed to be responsive for mobile, tablet, and laptop devices, ensuring a great user experience across all platforms.
 
-## Setup
+## Setup locally
 
 To set up the "Pairs Manager" locally:
 
